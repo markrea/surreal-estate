@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+}
+
+.SE-logo {
+  width: 140px;
+}
+.navbar-links{
+    padding: 0%;
+    
+}
+.navbar-links-item {
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: small;
+
+}
