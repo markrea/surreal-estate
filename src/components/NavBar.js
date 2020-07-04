@@ -5,9 +5,10 @@ import "../styles/NavBar.css";
 
 const NavBar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar" data-testid="nav-bar-id">
       <img
         className="SE-logo"
+        data-testid="logo-id"
         src="https://mcrcodes.s3.eu-west-2.amazonaws.com/course/surreal-estate/logo.png"
         alt="SELogo"
       />
