@@ -29,8 +29,8 @@ const AddProperty = () => {
     <div className="AddProperty">
       <form onSubmit={handleAddProperty}>
         <div className="input-fields">
-        <label for="title" className="label" htmlFor="title">
-          Title
+        <label className="label" htmlFor="title">
+          Property Description
           <input
             className="form-field"
             id="title"
@@ -42,7 +42,7 @@ const AddProperty = () => {
         </label>
 
         <br />
-        <label for="city" className="label" htmlFor="city">
+        <label className="label" htmlFor="city">
           City
           <select
             className="form-field"
@@ -59,7 +59,7 @@ const AddProperty = () => {
         </label>
 
         <br />
-        <label for="type" className="label" htmlFor="Type">
+        <label className="label" htmlFor="Type">
           Type
           <select
             className="form-field"
@@ -78,7 +78,7 @@ const AddProperty = () => {
           </select>
         </label>
         <br />
-        <label for="bedrooms" className="label" htmlFor="bedrooms">
+        <label className="label" htmlFor="bedrooms">
           Bedrooms
           <select
             className="form-field"
@@ -95,7 +95,8 @@ const AddProperty = () => {
             <option value="6+">6+</option>
           </select>
         </label>
-        <label for="bathrooms" className="label" htmlFor="bathrooms">
+        <br />
+        <label className="label" htmlFor="bathrooms">
           Bathrooms
           <select
             className="form-field"
@@ -111,7 +112,7 @@ const AddProperty = () => {
           </select>
         </label>
         <br />
-        <label for="price" className="label" htmlFor="price">
+        <label className="label" htmlFor="price">
           Price
           <input
             className="form-field"
@@ -124,7 +125,7 @@ const AddProperty = () => {
           />
         </label>
         <br />
-        <label for="email" className="label" htmlFor="email">
+        <label  className="label" htmlFor="email">
           Email
           <input
             className="form-field"

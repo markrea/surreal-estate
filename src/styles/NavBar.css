@@ -1,23 +1,53 @@
 .navbar {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   background-color: white;
   border-bottom: 1px solid lightgrey;
+  justify-content: space-evenly;
+ 
+  margin: auto;
 }
 
+
 .SE-logo {
-  width: 140px;
+  max-width: 35%;
+  overflow: hidden;
+  object-fit: contain;
 }
 .navbar-links {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   padding: 0%;
   list-style-type: none;
+  
+ 
+  
 }
 .navbar-links-item {
-  margin: 0;
-  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 20px;
   text-decoration: none;
   color: black;
-  font-size: small;
+  font-size: 3vw;
+
+}
+
+.navbar-links-item:focus {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 620px) {
+  .navbar-links-item {
+    font-size: 18px;
+    padding: 0 8vw 0 30px;
+    width: 150px;
+  }
+  .SE-logo {
+    width: 247px;
+    height: auto;
+  }
 }
