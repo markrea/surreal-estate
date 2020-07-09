@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`component renders correctly 1`] = `
+exports[`NavBar component renders correctly 1`] = `
 <DocumentFragment>
   <div
     class="navbar"

@@ -39,7 +39,7 @@ select {
   background-color: lightgray;
 }
 
-*:focus {
+input:focus, select:focus {
     outline: none;
   box-shadow:  0px 0px 0px 2px #54274a;
 }
