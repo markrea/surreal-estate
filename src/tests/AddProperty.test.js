@@ -3,14 +3,14 @@ import { render } from "@testing-library/react";
 import AddProperty from "../components/AddProperty";
 
 describe("AddProperty", () => {
-  test("component renders correctly", () => {
+  it("component renders correctly", () => {
     const { asFragment } = render(<AddProperty />);
     const component = asFragment();
 
     expect(component).toMatchSnapshot();
   });
 
-  test("renders AddProperty", () => {
+  it("renders AddProperty", () => {
       const { getByLabelText, getByRole } = render(<AddProperty />);
       
       expect(getByLabelText("Property Description")).toBeInTheDocument();

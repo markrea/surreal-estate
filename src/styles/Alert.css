@@ -1,0 +1,14 @@
+.alert-error {
+    border: 2px solid #B50802;
+    background-color: #FEC4C2;
+    color: #B50802;
+ 
+    padding-left: 8px;
+}
+
+.alert-success {
+    border: 2px solid #8DA612;
+    background-color: #ECF7B6;
+    color: #8DA612;
+    padding-left: 8px;
+}
