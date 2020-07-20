@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBar the component renders correctly against snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <a
+      class="sidebar-link"
+      href="/?query={\\"city\\":\\"Manchester\\"}"
+    >
+      Manchester
+    </a>
+    <a
+      class="sidebar-link"
+      href="/?query={\\"city\\":\\"Liverpool\\"}"
+    >
+      Liverpool
+    </a>
+    <a
+      class="sidebar-link"
+      href="/?query={\\"city\\":\\"Sheffield\\"}"
+    >
+      Sheffield
+    </a>
+    <a
+      class="sidebar-link"
+      href="/?query={\\"city\\":\\"Leeds\\"}"
+    >
+      Leeds
+    </a>
+  </div>
+</DocumentFragment>
+`;

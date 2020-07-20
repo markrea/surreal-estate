@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import AddProperty from "../components/AddProperty";
 
 describe("AddProperty", () => {
-  it("component renders correctly", () => {
+  it("renders component correctly", () => {
     const { asFragment } = render(<AddProperty />);
     const component = asFragment();
 

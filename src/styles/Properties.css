@@ -1,0 +1,14 @@
+.property-body {
+    padding: 0.5rem;
+    
+    
+  }
+  
+  .col{
+    display: inline-block;
+    margin: auto;
+    width: 90%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+

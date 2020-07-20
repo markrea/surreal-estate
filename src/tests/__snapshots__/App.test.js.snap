@@ -34,8 +34,35 @@ exports[`component renders correctly 1`] = `
         </li>
       </ul>
     </div>
-    <div>
-      Properties Page
+    <div
+      class="property-body"
+    >
+      <div>
+        <a
+          class="sidebar-link"
+          href="/?query={\\"city\\":\\"Manchester\\"}"
+        >
+          Manchester
+        </a>
+        <a
+          class="sidebar-link"
+          href="/?query={\\"city\\":\\"Liverpool\\"}"
+        >
+          Liverpool
+        </a>
+        <a
+          class="sidebar-link"
+          href="/?query={\\"city\\":\\"Sheffield\\"}"
+        >
+          Sheffield
+        </a>
+        <a
+          class="sidebar-link"
+          href="/?query={\\"city\\":\\"Leeds\\"}"
+        >
+          Leeds
+        </a>
+      </div>
     </div>
   </div>
 </DocumentFragment>
