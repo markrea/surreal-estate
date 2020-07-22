@@ -67,3 +67,115 @@ exports[`component renders correctly 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="navbar"
+      data-testid="nav-bar-id"
+    >
+      <img
+        alt="SELogo"
+        class="SE-logo"
+        data-testid="logo-id"
+        src="https://mcrcodes.s3.eu-west-2.amazonaws.com/course/surreal-estate/logo.png"
+      />
+      <ul
+        class="navbar-links"
+      >
+        <li>
+          <a
+            class="navbar-links-item"
+            data-testid="view-properties-id"
+            href="/"
+          >
+            View Properties
+          </a>
+        </li>
+        <li>
+          <a
+            class="navbar-links-item"
+            data-testid="add-property-id"
+            href="/add-property"
+          >
+            Add a Property
+          </a>
+        </li>
+        <li
+          class="facebook-button"
+        >
+          <div>
+            Facebook login
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="property-body"
+    >
+      <div>
+        <form
+          class="search-bar"
+        >
+          <input
+            type="text"
+            value=""
+          />
+          <button
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+        <a
+          class="sidebar-link"
+          href="/?query={\\"city\\":\\"Manchester\\"}"
+        >
+          Manchester
+        </a>
+        <a
+          class="sidebar-link"
+          href="/?query={\\"city\\":\\"Liverpool\\"}"
+        >
+          Liverpool
+        </a>
+        <a
+          class="sidebar-link"
+          href="/?query={\\"city\\":\\"Sheffield\\"}"
+        >
+          Sheffield
+        </a>
+        <a
+          class="sidebar-link"
+          href="/?query={\\"city\\":\\"Leeds\\"}"
+        >
+          Leeds
+        </a>
+        <a
+          class="sidebar-link"
+          href="/?sort={\\"price\\":1}"
+        >
+          Price Ascending
+        </a>
+        <a
+          class="sidebar-link"
+          href="/?sort={\\"price\\":-1}"
+        >
+          Price Descending
+        </a>
+      </div>
+      <div
+        class="property-cards"
+      >
+        <div
+          class="cards"
+        />
+      </div>
+    </div>
+    <footer>
+      Mark Rea 2020
+    </footer>
+  </div>
+</DocumentFragment>
+`;

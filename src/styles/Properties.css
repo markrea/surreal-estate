@@ -1,14 +1,38 @@
-.property-body {
+/* .property-body {
     padding: 0.5rem;
     
     
   }
-  
-  .col{
-    display: inline-block;
-    margin: auto;
-    width: 90%;
-    padding: 0.5rem;
-    box-sizing: border-box;
+   */
+
+   .property-cards {
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+      background-repeat: repeat;
+    background-size: cover;
   }
 
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .card {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+ @media screen and (min-width: 961px) {
+  .property-card {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+}

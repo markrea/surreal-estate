@@ -1,31 +1,50 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { Router } from "react-router-dom";
-import { createMemoryHistory } from "history";
-import NavBar from "../components/NavBar";
+import { MemoryRouter } from "react-router-dom";
+import Navbar from "../components/NavBar";
 
-describe("NavBar", () => {
-  test("component renders correctly", () => {
-    const history = createMemoryHistory();
+describe("Navbar", () => {
+  const mockFacebookLogin = jest.fn();
+  const mockLoginData = {
+    userID: "userID",
+    picture: "picture",
+    email: "email",
+    name: "name",
+  };
+
+  it("renders correctly", () => {
     const { asFragment } = render(
-      <Router history={history}>
-        <NavBar />
-      </Router>
+      <MemoryRouter>
+        <Navbar
+          {...mockLoginData}
+          onLogin={mockFacebookLogin}
+          onLogout={mockFacebookLogin}
+        />
+      </MemoryRouter>
     );
-    const component = asFragment();
-    expect(component).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
-  test(" renders NavBar component", () => {
-    const history = createMemoryHistory();
-    const { getByTestId, getByText } = render(
-      <Router history={history}>
-        <NavBar />
-      </Router>
+  it("renders the correct specs", () => {
+    const { getByTestId } = render(
+      <MemoryRouter>
+        <Navbar
+          {...mockLoginData}
+          onLogin={mockFacebookLogin}
+          onLogout={mockFacebookLogin}
+        />
+      </MemoryRouter>
     );
+    const logo = getByTestId("logo-id");
+    expect(logo).toBeInTheDocument();
 
-    expect(getByTestId("logo-id")).toBeInTheDocument();
-    expect(getByText("View Properties")).toBeInTheDocument();
-    expect(getByText("Add a Property")).toBeInTheDocument();
+    const viewProperties = getByTestId("view-properties-id");
+    expect(viewProperties).toHaveTextContent("View Properties");
+
+    const addProperty = getByTestId("add-property-id");
+    expect(addProperty).toHaveTextContent("Add a Property");
+
+    // const favourites = getByTestId("favourites-id");
+    // expect(favourites).toHaveTextContent("Favourites");
   });
 });

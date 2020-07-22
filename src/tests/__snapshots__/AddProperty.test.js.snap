@@ -104,6 +104,7 @@ exports[`AddProperty renders component correctly 1`] = `
           </select>
         </label>
         <br />
+        npm i qs
         <label
           class="label"
           for="bedrooms"

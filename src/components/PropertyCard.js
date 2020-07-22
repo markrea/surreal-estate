@@ -1,6 +1,5 @@
 import React from "react"; 
 import PropTypes from "prop-types";
-import "../styles/PropertyCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBed, faBath } from "@fortawesome/free-solid-svg-icons";
 

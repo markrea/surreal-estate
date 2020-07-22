@@ -1,12 +1,10 @@
 .navbar {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
   background-color: white;
   border-bottom: 1px solid lightgrey;
   justify-content: space-evenly;
- 
-  margin: auto;
 }
 
 
@@ -50,4 +48,7 @@
     width: 247px;
     height: auto;
   }
+}
+.facebook-button {
+  width: 80%;
 }

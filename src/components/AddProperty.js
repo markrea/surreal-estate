@@ -27,7 +27,7 @@ const AddProperty = () => {
     event.preventDefault();
     setAlert({ message:"", isSuccess: false });
   
-    axios.post(`http://localhost:4000/api/v1/PropertyListing`, { ...fields 
+    axios.post(`http://localhost:4000/api/v1/PropertyListing`, { ...fields, 
   }).then(() => {
     setAlert({
       message: "Property Added",
@@ -99,7 +99,7 @@ const AddProperty = () => {
             <option value="Bungalow">Bungalow</option>
           </select>
         </label>
-        <br />
+        <br />npm i qs
         <label className="label" htmlFor="bedrooms">
           Bedrooms
           <select

@@ -3,6 +3,19 @@
 exports[`SideBar the component renders correctly against snapshot 1`] = `
 <DocumentFragment>
   <div>
+    <form
+      class="search-bar"
+    >
+      <input
+        type="text"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
     <a
       class="sidebar-link"
       href="/?query={\\"city\\":\\"Manchester\\"}"
@@ -26,6 +39,18 @@ exports[`SideBar the component renders correctly against snapshot 1`] = `
       href="/?query={\\"city\\":\\"Leeds\\"}"
     >
       Leeds
+    </a>
+    <a
+      class="sidebar-link"
+      href="/?sort={\\"price\\":1}"
+    >
+      Price Ascending
+    </a>
+    <a
+      class="sidebar-link"
+      href="/?sort={\\"price\\":-1}"
+    >
+      Price Descending
     </a>
   </div>
 </DocumentFragment>

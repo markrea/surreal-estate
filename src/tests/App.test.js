@@ -1,16 +1,18 @@
 import React from "react";
+import { MemoryRouter } from "react-router-dom";
 import { render } from "@testing-library/react";
-import { Router } from "react-router-dom";
-import { createMemoryHistory } from "history";
 import App from "../components/App";
 
-test("component renders correctly", () => {
-  const history = createMemoryHistory();
+jest.mock("react-facebook-login", () =>
+  jest.fn(() => <div>Facebook login</div>)
+);
+
+test("renders correctly", () => {
   const { asFragment } = render(
-    <Router history={history}>
+    <MemoryRouter>
       <App />
-    </Router>
+    </MemoryRouter>
   );
-  const component = asFragment();
-  expect(component).toMatchSnapshot();
+
+  expect(asFragment()).toMatchSnapshot();
 });
